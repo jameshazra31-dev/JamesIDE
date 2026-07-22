@@ -1,0 +1,67 @@
+name: Fill missing files
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+    paths: [".github/workflows/fill-missing.yml"]
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  fill:
+    name: Restore missing source files
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch upstream snapshot
+        run: |
+          mkdir -p /tmp/upstream
+          cd /tmp/upstream
+          git init -q
+          git remote add origin https://github.com/AndroidCSOfficial/android-code-studio.git
+          git fetch --depth 1 origin e93e7468e6482ea51ef8e1adad6b7c6de86ae7cd
+          git checkout -q FETCH_HEAD
+          rm -rf /tmp/upstream/.git /tmp/upstream/.github /tmp/upstream/.gitmodules
+
+      - name: Copy only missing files
+        run: |
+          cp -rn /tmp/upstream/. .
+          rm -f .gitmodules
+
+      - name: Re-apply James IDE LSP fixes
+        run: |
+          F1=java/lsp/src/main/java/com/tom/rv2ide/lsp/kotlin/KotlinClasspathProvider.kt
+          if [ -f "$F1" ] && ! grep -q 'com.james.ide/files/home/.gradle' "$F1"; then
+            sed -i 's|^\( *\)File("/data/data/com.tom.rv2ide/files/home/.gradle"),|\1File("/data/data/com.james.ide/files/home/.gradle"),\n\1File("/data/data/com.tom.rv2ide/files/home/.gradle"),|' "$F1"
+          fi
+          F2=java/lsp/src/main/java/com/tom/rv2ide/lsp/kotlin/KotlinServerProcessManager.kt
+          if [ -f "$F2" ] && ! grep -q 'com.james.ide/files/usr/bin/java' "$F2"; then
+            sed -i 's|^\( *\)"/data/data/com.tom.rv2ide/files/usr/bin/java",|\1"/data/data/com.james.ide/files/usr/bin/java",\n\1"/data/data/com.tom.rv2ide/files/usr/bin/java",|' "$F2"
+          fi
+
+      - name: Commit and push restored files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          mkdir -p ci
+          git diff --cached --name-only > ci/restored-files.md
+          git add ci/restored-files.md
+          if git diff --cached --quiet; then
+            echo "Nothing was missing."
+          else
+            git commit -m "Restore missing source files from upstream snapshot"
+            git pull --rebase origin main || true
+            git push origin main
+          fi
+
+      - name: Trigger APK build
+        run: |
+          AUTH=$(git config --get http.https://github.com/.extraheader | sed 's/AUTHORIZATION: basic //' | base64 -d)
+          export GH_TOKEN="${AUTH#*:}"
+          gh workflow run build-apk.yml --ref main -R jameshazra31-dev/JamesIDE
