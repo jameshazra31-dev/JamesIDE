@@ -1,0 +1,51 @@
+name: Import project
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  import:
+    name: Import James IDE project
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check if already imported
+        id: check
+        run: |
+          if [ -f settings.gradle.kts ]; then
+            echo "done=true" >> "$GITHUB_OUTPUT"
+            echo "Project already imported, nothing to do."
+          else
+            echo "done=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Fetch complete project
+        if: steps.check.outputs.done == 'false'
+        run: |
+          git clone --depth 1 --branch main https://github.com/jameshazra31-dev/JAMES-IDE.git /tmp/src
+          rsync -a --exclude .git --exclude .github /tmp/src/ ./
+          rm -f .gitmodules
+
+      - name: Commit and push
+        if: steps.check.outputs.done == 'false'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Import complete James IDE project"
+          git push origin main
+
+      - name: Trigger APK build
+        if: steps.check.outputs.done == 'false'
+        run: |
+          AUTH=$(git config --get http.https://github.com/.extraheader | sed 's/AUTHORIZATION: basic //' | base64 -d)
+          export GH_TOKEN="${AUTH#*:}"
+          gh workflow run build-apk.yml --ref main -R jameshazra31-dev/JamesIDE
