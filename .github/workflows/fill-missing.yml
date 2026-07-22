@@ -33,6 +33,16 @@ jobs:
           cp -rn /tmp/upstream/. .
           rm -f .gitmodules
 
+      - name: Replace empty files with upstream versions
+        run: |
+          find . -type f -size 0 -not -path "./.git/*" -not -path "./.github/*" -not -path "./ci/*" | while read -r f; do
+            src="/tmp/upstream/${f#./}"
+            if [ -s "$src" ]; then
+              cp "$src" "$f"
+              echo "fixed empty: $f"
+            fi
+          done
+
       - name: Re-apply James IDE LSP fixes
         run: |
           F1=java/lsp/src/main/java/com/tom/rv2ide/lsp/kotlin/KotlinClasspathProvider.kt
@@ -55,7 +65,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "Nothing was missing."
           else
-            git commit -m "Restore missing source files from upstream snapshot"
+            git commit -m "Restore missing and empty source files from upstream snapshot"
             git pull --rebase origin main || true
             git push origin main
           fi
