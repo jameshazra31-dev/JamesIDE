@@ -435,7 +435,7 @@ class KotlinServerProcessManager(context: Context) {
   private fun findJavaExecutable(): String {
     val candidates =
         listOf(
-            "/data/data/com.james.ide/files/usr/bin/java",
+            "/data/data/com.tom.rv2ide/files/usr/bin/java",
             "/data/data/com.tom.rv2ide/files/usr/bin/java",
             System.getenv("JAVA_HOME")?.let { "$it/bin/java" },
             "java",

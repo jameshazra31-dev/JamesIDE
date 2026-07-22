@@ -66,7 +66,7 @@ android {
   namespace = BuildConfig.packageName
 
   defaultConfig {
-    applicationId = "com.james.ide"
+    applicationId = "com.tom.rv2ide"
     vectorDrawables.useSupportLibrary = true
   }
   

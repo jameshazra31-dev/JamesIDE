@@ -273,7 +273,7 @@ class KotlinClasspathProvider {
       val gradleHomeDirs =
           listOf(
               File(System.getProperty("user.home", ""), ".gradle"),
-              File("/data/data/com.james.ide/files/home/.gradle"),
+              File("/data/data/com.tom.rv2ide/files/home/.gradle"),
               File("/data/data/com.tom.rv2ide/files/home/.gradle"),
               File("/storage/emulated/0/.gradle"),
               // Android app's own gradle cache
