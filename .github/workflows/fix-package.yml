@@ -1,0 +1,36 @@
+name: Fix package id
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/fix-package.yml
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Revert application id to match termux bootstrap prefix
+        run: |
+          sed -i 's|applicationId = "com.james.ide"|applicationId = "com.tom.rv2ide"|' core/app/build.gradle.kts
+          sed -i 's|TERMUX_PACKAGE_NAME = "com.james.ide"|TERMUX_PACKAGE_NAME = "com.tom.rv2ide"|' termux/shared/src/main/java/com/termux/shared/termux/TermuxConstants.java
+          grep -rl 'data/com\.james\.ide' core/resources java/lsp 2>/dev/null | xargs -r sed -i 's|data/com\.james\.ide|data/com.tom.rv2ide|g'
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Revert applicationId to com.tom.rv2ide to match termux bootstrap prefix" || echo "nothing to commit"
+          git push
+
+      - name: Trigger APK build
+        run: |
+          RAW=$(git config --get http.https://github.com/.extraheader)
+          B64=$(echo "$RAW" | sed 's/^AUTHORIZATION: basic //')
+          DEC=$(echo "$B64" | base64 -d)
+          TOKEN=$(echo "$DEC" | sed 's/^x-access-token://')
+          GH_TOKEN="$TOKEN" gh workflow run build-apk.yml --ref main -R jameshazra31-dev/JamesIDE
