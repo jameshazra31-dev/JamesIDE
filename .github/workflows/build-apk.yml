@@ -36,6 +36,10 @@ jobs:
         if: hashFiles('settings.gradle.kts') != ''
         run: chmod +x ./gradlew
 
+      - name: Pre-create desugar output dir (AGP workaround)
+        if: hashFiles('settings.gradle.kts') != ''
+        run: mkdir -p core/app/build/intermediates/external_file_lib_dex_archives/debug/desugarDebugFileDependencies
+
       - name: Assemble Debug APK
         if: hashFiles('settings.gradle.kts') != ''
         run: ./gradlew :core:app:assembleDebug --no-daemon --stacktrace
