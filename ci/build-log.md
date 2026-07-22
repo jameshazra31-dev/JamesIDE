@@ -1,246 +1,227 @@
 # Build log (last 500 lines)
 
 ~~~
+> Task :core:indexing-api:dataBindingGenBaseClassesDebug
+> Task :core:app:extractDebugSupportedLocales
+> Task :core:indexing-core:dataBindingMergeDependencyArtifactsDebug
+> Task :core:app:generateDebugResources
+> Task :core:indexing-core:dataBindingGenBaseClassesDebug
+> Task :core:app:generateDebugLocaleConfig
+> Task :core:lsp-api:dataBindingMergeDependencyArtifactsDebug
+> Task :core:lsp-models:dataBindingMergeDependencyArtifactsDebug
+> Task :core:lsp-models:dataBindingGenBaseClassesDebug
+> Task :utilities:preferences:dataBindingMergeDependencyArtifactsDebug
+> Task :utilities:preferences:dataBindingGenBaseClassesDebug
+> Task :core:lsp-api:dataBindingGenBaseClassesDebug
+> Task :core:projectdata:dataBindingMergeDependencyArtifactsDebug
+> Task :core:projectdata:dataBindingGenBaseClassesDebug
 
-> Configure project :build-logic:desugaring
-WARNING: Unsupported Kotlin plugin version.
-The `embedded-kotlin` and `kotlin-dsl` plugins rely on features of Kotlin `2.0.21` that might work differently than in the requested version `2.1.0`.
+> Task :tooling:impl:kaptGenerateStubsKotlin
+w: Support for language version 2.0+ in kapt is in Alpha and must be enabled explicitly. Falling back to 1.9.
 
-> Configure project :build-logic:plugins
-WARNING: Unsupported Kotlin plugin version.
-The `embedded-kotlin` and `kotlin-dsl` plugins rely on features of Kotlin `2.0.21` that might work differently than in the requested version `2.1.0`.
+> Task :editor:api:dataBindingMergeDependencyArtifactsDebug
+> Task :editor:api:dataBindingGenBaseClassesDebug
+> Task :editor:impl:dataBindingMergeDependencyArtifactsDebug
+> Task :editor:treesitter:dataBindingMergeDependencyArtifactsDebug
+> Task :editor:treesitter:dataBindingGenBaseClassesDebug
+> Task :java:lsp:dataBindingMergeDependencyArtifactsDebug
+> Task :java:lsp:dataBindingGenBaseClassesDebug
+> Task :xml:lsp:dataBindingMergeDependencyArtifactsDebug
+> Task :xml:lsp:dataBindingGenBaseClassesDebug
+> Task :editor:impl:dataBindingGenBaseClassesDebug
+> Task :external:acsprovider:dataBindingMergeDependencyArtifactsDebug
+> Task :external:acsprovider:dataBindingGenBaseClassesDebug
+> Task :tooling:impl:kaptKotlin
+> Task :external:atc:dataBindingMergeDependencyArtifactsDebug
+> Task :external:atc:dataBindingGenBaseClassesDebug
+> Task :external:logwire:dataBindingMergeDependencyArtifactsDebug
+> Task :external:logwire:dataBindingGenBaseClassesDebug
+> Task :java:lsp-setup:dataBindingMergeDependencyArtifactsDebug
+> Task :java:lsp-setup:dataBindingGenBaseClassesDebug
+> Task :logging:idestats:dataBindingMergeDependencyArtifactsDebug
+> Task :logging:idestats:dataBindingGenBaseClassesDebug
+> Task :termux:application:dataBindingMergeDependencyArtifactsDebug
+> Task :termux:emulator:dataBindingMergeDependencyArtifactsDebug
+> Task :termux:emulator:dataBindingGenBaseClassesDebug
+> Task :termux:shared:dataBindingMergeDependencyArtifactsDebug
+> Task :termux:view:dataBindingMergeDependencyArtifactsDebug
+> Task :termux:view:dataBindingGenBaseClassesDebug
+> Task :termux:shared:dataBindingGenBaseClassesDebug
+> Task :termux:application:dataBindingGenBaseClassesDebug
+> Task :utilities:templates-api:dataBindingMergeDependencyArtifactsDebug
+> Task :utilities:templates-api:dataBindingGenBaseClassesDebug
+> Task :utilities:templates-impl:dataBindingMergeDependencyArtifactsDebug
+> Task :utilities:templates-impl:dataBindingGenBaseClassesDebug
 
-> Task :build-logic:common:checkKotlinGradlePluginConfigurationErrors SKIPPED
-> Task :build-logic:plugins:checkKotlinGradlePluginConfigurationErrors SKIPPED
-> Task :build-logic:desugaring:checkKotlinGradlePluginConfigurationErrors SKIPPED
-> Task :build-logic:desugaring:pluginDescriptors
-> Task :build-logic:plugins:extractPrecompiledScriptPluginPlugins
-> Task :build-logic:properties-parser:processResources NO-SOURCE
-> Task :build-logic:desugaring:processResources
-> Task :build-logic:plugins:generateScriptPluginAdapters
-> Task :build-logic:plugins:pluginDescriptors
-> Task :build-logic:plugins:processResources
-> Task :build-deps-common:desugaring-core:compileJava
-> Task :build-deps-common:desugaring-core:processResources NO-SOURCE
-> Task :build-deps-common:desugaring-core:classes
-> Task :build-deps-common:desugaring-core:jar
+> Task :core:app:mergeDebugResources
+/home/runner/work/JamesIDE/JamesIDE/core/resources/build/intermediates/packaged_res/debug/packageDebugResources/values/values.xml:692:4: Multiple substitutions specified in non-positional format of string resource string/lsp_server_download_failed. Did you mean to add the formatted="false" attribute?
+/home/runner/work/JamesIDE/JamesIDE/core/resources/build/intermediates/packaged_res/debug/packageDebugResources/values/values.xml:698:4: Multiple substitutions specified in non-positional format of string resource string/lsp_server_install_success. Did you mean to add the formatted="false" attribute?
+/home/runner/work/JamesIDE/JamesIDE/core/resources/build/intermediates/packaged_res/debug/packageDebugResources/values/values.xml:706:4: Multiple substitutions specified in non-positional format of string resource string/lsp_server_uninstall_error. Did you mean to add the formatted="false" attribute?
+/home/runner/work/JamesIDE/JamesIDE/core/resources/build/intermediates/packaged_res/debug/packageDebugResources/values/values.xml:1153:4: Multiple substitutions specified in non-positional format of string resource string/updater_progress_format. Did you mean to add the formatted="false" attribute?
+/home/runner/work/JamesIDE/JamesIDE/core/resources/build/intermediates/packaged_res/debug/packageDebugResources/values/values.xml:1162:4: Multiple substitutions specified in non-positional format of string resource string/updater_version_check_log. Did you mean to add the formatted="false" attribute?
+/home/runner/work/JamesIDE/JamesIDE/core/resources/build/intermediates/packaged_res/debug/packageDebugResources/values-zh-rCN/values-zh-rCN.xml:385:4: Multiple substitutions specified in non-positional format of string resource string/lsp_server_download_failed. Did you mean to add the formatted="false" attribute?
+/home/runner/work/JamesIDE/JamesIDE/core/resources/build/intermediates/packaged_res/debug/packageDebugResources/values-zh-rCN/values-zh-rCN.xml:391:4: Multiple substitutions specified in non-positional format of string resource string/lsp_server_install_success. Did you mean to add the formatted="false" attribute?
+/home/runner/work/JamesIDE/JamesIDE/core/resources/build/intermediates/packaged_res/debug/packageDebugResources/values-ar-rSA/values-ar-rSA.xml:599:4: Multiple substitutions specified in non-positional format of string resource string/updater_progress_format. Did you mean to add the formatted="false" attribute?
+/home/runner/work/JamesIDE/JamesIDE/core/resources/build/intermediates/packaged_res/debug/packageDebugResources/values-ar-rSA/values-ar-rSA.xml:608:4: Multiple substitutions specified in non-positional format of string resource string/updater_version_check_log. Did you mean to add the formatted="false" attribute?
 
-> Task :build-logic:desugaring:compileKotlin
-w: Inconsistent JVM-target compatibility detected for tasks 'compileJava' (17) and 'compileKotlin' (21).
-This will become an error in Gradle 8.0.
-Consider using JVM Toolchain: https://kotl.in/gradle/jvm/toolchain
-Learn more about JVM-target validation: https://kotl.in/gradle/jvm/target-validation 
+> Task :utilities:treeview:dataBindingMergeDependencyArtifactsDebug
+> Task :utilities:treeview:dataBindingGenBaseClassesDebug
+> Task :utilities:uidesigner:dataBindingMergeDependencyArtifactsDebug
+> Task :utilities:xml-inflater:dataBindingMergeDependencyArtifactsDebug
+> Task :utilities:xml-inflater:dataBindingGenBaseClassesDebug
+> Task :utilities:uidesigner:dataBindingGenBaseClassesDebug
+> Task :core:app:dataBindingTriggerDebug
+> Task :core:app:generateDebugBuildConfig
+> Task :core:app:generateSafeArgsDebug
+> Task :ideconfigurations:compileDebugLibraryResources
+> Task :core:actions:compileDebugLibraryResources FROM-CACHE
+> Task :ideconfigurations:writeDebugAarMetadata
+> Task :core:actions:writeDebugAarMetadata
+> Task :core:common:writeDebugAarMetadata
+> Task :core:indexing-api:writeDebugAarMetadata
+> Task :core:indexing-core:writeDebugAarMetadata
+> Task :core:lsp-api:writeDebugAarMetadata
+> Task :core:lsp-models:writeDebugAarMetadata
+> Task :core:projectdata:writeDebugAarMetadata
+> Task :core:projects:writeDebugAarMetadata
+> Task :core:resources:writeDebugAarMetadata
+> Task :editor:api:writeDebugAarMetadata
+> Task :editor:impl:writeDebugAarMetadata
+> Task :editor:treesitter:writeDebugAarMetadata
+> Task :event:eventbus-android:writeDebugAarMetadata
+> Task :event:eventbus-events:writeDebugAarMetadata
+> Task :external:acsprovider:writeDebugAarMetadata
+> Task :external:atc:writeDebugAarMetadata
+> Task :external:logwire:writeDebugAarMetadata
+> Task :java:javac-services:writeDebugAarMetadata
+> Task :java:lsp:writeDebugAarMetadata
+> Task :java:lsp-setup:writeDebugAarMetadata
+> Task :logging:idestats:writeDebugAarMetadata
+> Task :logging:logsender:writeDebugAarMetadata
+> Task :termux:application:writeDebugAarMetadata
+> Task :termux:emulator:writeDebugAarMetadata
+> Task :termux:shared:writeDebugAarMetadata
+> Task :termux:view:writeDebugAarMetadata
+> Task :utilities:flashbar:writeDebugAarMetadata
+> Task :utilities:preferences:writeDebugAarMetadata
+> Task :utilities:templates-api:writeDebugAarMetadata
+> Task :utilities:templates-impl:writeDebugAarMetadata
+> Task :utilities:treeview:writeDebugAarMetadata
+> Task :utilities:uidesigner:writeDebugAarMetadata
+> Task :utilities:xml-inflater:writeDebugAarMetadata
+> Task :xml:aaptcompiler:writeDebugAarMetadata
+> Task :xml:lsp:writeDebugAarMetadata
+> Task :xml:resources-api:writeDebugAarMetadata
+> Task :xml:utils:writeDebugAarMetadata
+> Task :core:indexing-api:processDebugNavigationResources FROM-CACHE
+> Task :core:indexing-core:processDebugNavigationResources FROM-CACHE
+> Task :core:lsp-api:processDebugNavigationResources FROM-CACHE
+> Task :core:lsp-models:processDebugNavigationResources FROM-CACHE
+> Task :core:projectdata:processDebugNavigationResources FROM-CACHE
+> Task :core:projects:processDebugNavigationResources FROM-CACHE
+> Task :editor:api:processDebugNavigationResources FROM-CACHE
+> Task :editor:impl:processDebugNavigationResources
+> Task :editor:treesitter:processDebugNavigationResources FROM-CACHE
+> Task :external:acsprovider:processDebugNavigationResources FROM-CACHE
+> Task :external:atc:processDebugNavigationResources FROM-CACHE
+> Task :external:logwire:processDebugNavigationResources FROM-CACHE
+> Task :java:javac-services:processDebugNavigationResources FROM-CACHE
+> Task :java:lsp:processDebugNavigationResources FROM-CACHE
+> Task :java:lsp-setup:processDebugNavigationResources
+> Task :logging:idestats:processDebugNavigationResources FROM-CACHE
+> Task :logging:logsender:processDebugNavigationResources
+> Task :termux:application:processDebugNavigationResources
+> Task :termux:emulator:processDebugNavigationResources FROM-CACHE
+> Task :termux:shared:processDebugNavigationResources
+> Task :termux:view:processDebugNavigationResources FROM-CACHE
+> Task :utilities:preferences:processDebugNavigationResources
+> Task :utilities:templates-api:processDebugNavigationResources FROM-CACHE
+> Task :utilities:templates-impl:processDebugNavigationResources
+> Task :utilities:treeview:processDebugNavigationResources
+> Task :utilities:uidesigner:processDebugNavigationResources
+> Task :utilities:xml-inflater:processDebugNavigationResources FROM-CACHE
+> Task :xml:aaptcompiler:processDebugNavigationResources FROM-CACHE
+> Task :xml:lsp:processDebugNavigationResources FROM-CACHE
+> Task :xml:resources-api:processDebugNavigationResources FROM-CACHE
+> Task :xml:utils:processDebugNavigationResources FROM-CACHE
+> Task :ideconfigurations:extractDeepLinksDebug
+> Task :core:app:checkDebugAarMetadata
+> Task :ideconfigurations:processDebugManifest
+> Task :core:actions:extractDeepLinksDebug FROM-CACHE
+> Task :core:actions:processDebugManifest
+> Task :core:common:extractDeepLinksDebug FROM-CACHE
+> Task :core:common:processDebugManifest
+> Task :core:indexing-api:extractDeepLinksDebug FROM-CACHE
+> Task :core:indexing-api:processDebugManifest
+> Task :core:indexing-core:extractDeepLinksDebug FROM-CACHE
+> Task :core:indexing-core:processDebugManifest
+> Task :core:lsp-api:extractDeepLinksDebug FROM-CACHE
+> Task :core:lsp-api:processDebugManifest
+> Task :core:lsp-models:extractDeepLinksDebug FROM-CACHE
+> Task :core:lsp-models:processDebugManifest
+> Task :core:projectdata:extractDeepLinksDebug FROM-CACHE
+> Task :core:projectdata:processDebugManifest
+> Task :core:projects:extractDeepLinksDebug FROM-CACHE
+> Task :core:projects:processDebugManifest
+> Task :core:resources:extractDeepLinksDebug FROM-CACHE
+> Task :core:resources:processDebugManifest
+> Task :editor:api:extractDeepLinksDebug FROM-CACHE
+> Task :editor:api:processDebugManifest
+> Task :editor:impl:extractDeepLinksDebug FROM-CACHE
+> Task :editor:impl:processDebugManifest
+> Task :editor:treesitter:extractDeepLinksDebug FROM-CACHE
+> Task :editor:treesitter:processDebugManifest
+> Task :event:eventbus-android:extractDeepLinksDebug FROM-CACHE
+> Task :event:eventbus-android:processDebugManifest
+> Task :event:eventbus-events:extractDeepLinksDebug FROM-CACHE
+> Task :event:eventbus-events:processDebugManifest
+> Task :external:acsprovider:extractDeepLinksDebug FROM-CACHE
+> Task :external:acsprovider:processDebugManifest
+> Task :external:atc:extractDeepLinksDebug FROM-CACHE
+> Task :external:atc:processDebugManifest
+> Task :external:logwire:extractDeepLinksDebug FROM-CACHE
+> Task :external:logwire:processDebugManifest FAILED
+> Task :core:app:dataBindingGenBaseClassesDebug
 
+> Task :tooling:impl:compileKotlin
+w: file:///home/runner/work/JamesIDE/JamesIDE/tooling/impl/src/main/java/com/tom/rv2ide/tooling/impl/Main.kt:195:42 Condition is always 'true'.
+w: file:///home/runner/work/JamesIDE/JamesIDE/tooling/impl/src/main/java/com/tom/rv2ide/tooling/impl/util/LogbackStatusListener.kt:22:8 'class StatusPrinter : Any' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/JamesIDE/JamesIDE/tooling/impl/src/main/java/com/tom/rv2ide/tooling/impl/util/LogbackStatusListener.kt:45:5 'class StatusPrinter : Any' is deprecated. Deprecated in Java.
 
-> Task :build-logic:common:processResources NO-SOURCE
-> Task :build-logic:common:compileKotlin
-> Task :build-logic:common:compileJava NO-SOURCE
-> Task :build-logic:common:classes UP-TO-DATE
-> Task :build-logic:common:jar
-> Task :build-logic:desugaring:compileJava NO-SOURCE
-> Task :build-logic:desugaring:classes
-> Task :build-logic:desugaring:jar
-> Task :build-logic:properties-parser:compileJava
-> Task :build-logic:properties-parser:classes
-> Task :build-logic:properties-parser:jar
-> Task :build-logic:plugins:generateExternalPluginSpecBuilders
-> Task :build-logic:plugins:compilePluginsBlocks
-> Task :build-logic:plugins:generatePrecompiledScriptPluginAccessors
-
-> Task :build-logic:plugins:compileKotlin
-w: Inconsistent JVM-target compatibility detected for tasks 'compileJava' (17) and 'compileKotlin' (11).
-This will become an error in Gradle 8.0.
-Consider using JVM Toolchain: https://kotl.in/gradle/jvm/toolchain
-Learn more about JVM-target validation: https://kotl.in/gradle/jvm/target-validation 
-
-w: file:///home/runner/work/JamesIDE/JamesIDE/composite-builds/build-logic/plugins/src/main/java/com/tom/rv2ide/plugins/util/DownloadUtils.kt:66:22 'constructor URL(String!)' is deprecated. Deprecated in Java
-
-> Task :build-logic:plugins:compileJava
-> Task :build-logic:plugins:classes
-> Task :build-logic:plugins:jar
-
-> Configure project :ideconfigurations
-WARNING: The option setting 'android.jetifier.ignorelist=common-30.2.2.jar' is experimental.
-Version code is '1024'
-
-> Task :build-deps:logback-core:compileJava
-/home/runner/work/JamesIDE/JamesIDE/composite-builds/external/logback-android/logback-core/src/main/java/ch/qos/logback/core/CoreConstants.java:224: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    public static final int UNBOUND_HISTORY = UNBOUNDED_HISTORY;
-                            ^
-/home/runner/work/JamesIDE/JamesIDE/composite-builds/external/logback-android/logback-core/src/main/java/ch/qos/logback/core/pattern/PatternLayoutEncoderBase.java:55: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    public void setOutputPatternAsPresentationHeader(boolean outputPatternAsHeader) {
-                ^
-/home/runner/work/JamesIDE/JamesIDE/composite-builds/external/logback-android/logback-core/src/main/java/ch/qos/logback/core/pattern/PatternLayoutBase.java:108: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    protected void setContextForConverters(Converter<E> head) {
-                   ^
-/home/runner/work/JamesIDE/JamesIDE/composite-builds/external/logback-android/logback-core/src/main/java/ch/qos/logback/core/util/StatusPrinter.java:29: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-public class StatusPrinter {
-       ^
-/home/runner/work/JamesIDE/JamesIDE/composite-builds/external/logback-android/logback-core/src/main/java/ch/qos/logback/core/util/ExecutorServiceUtil.java:70: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    static public ExecutorService newExecutorService() {
-                                  ^
-/home/runner/work/JamesIDE/JamesIDE/composite-builds/external/logback-android/logback-core/src/main/java/ch/qos/logback/core/util/OptionHelper.java:262: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    public static boolean isEmpty(String str) {
-                          ^
-/home/runner/work/JamesIDE/JamesIDE/composite-builds/external/logback-android/logback-core/src/main/java/ch/qos/logback/core/util/Loader.java:48: warning: [removal] AccessController in java.security has been deprecated and marked for removal
-                    AccessController.checkPermission(new RuntimePermission("getClassLoader"));
-                    ^
-/home/runner/work/JamesIDE/JamesIDE/composite-builds/external/logback-android/logback-core/src/main/java/ch/qos/logback/core/util/Loader.java:45: warning: [removal] AccessController in java.security has been deprecated and marked for removal
-        HAS_GET_CLASS_LOADER_PERMISSION = AccessController.doPrivileged(new PrivilegedAction<Boolean>() {
-                                          ^
-/home/runner/work/JamesIDE/JamesIDE/composite-builds/external/logback-android/logback-core/src/main/java/ch/qos/logback/core/util/Loader.java:159: warning: [removal] AccessController in java.security has been deprecated and marked for removal
-            return AccessController.doPrivileged(new PrivilegedAction<ClassLoader>() {
-                   ^
-Note: Some input files use or override a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
-Note: /home/runner/work/JamesIDE/JamesIDE/composite-builds/external/logback-android/logback-core/src/main/java/ch/qos/logback/core/joran/sanity/SanityChecker.java uses unchecked or unsafe operations.
-Note: Recompile with -Xlint:unchecked for details.
-9 warnings
-
-> Task :build-deps:logback-core:processResources NO-SOURCE
-> Task :build-deps:logback-core:classes
-> Task :build-deps:logback-core:jar
-
-> Configure project :core:app
-Generated APK: james-ide-arm64-v8a-debug-1.0.0+gh.r04.apk for variant: debug, arch: arm64-v8a, versionCode: 1024
-Generated APK: james-ide-armeabi-v7a-debug-1.0.0+gh.r04.apk for variant: debug, arch: armeabi-v7a, versionCode: 1024
-Generated APK: james-ide-arm64-v8a-1.0.0+gh.r04.apk for variant: release, arch: arm64-v8a, versionCode: 1024
-Generated APK: james-ide-armeabi-v7a-1.0.0+gh.r04.apk for variant: release, arch: armeabi-v7a, versionCode: 1024
-Generated APK: james-ide-arm64-v8a-dev-1.0.0+gh.r04.apk for variant: dev, arch: arm64-v8a, versionCode: 1024
-Generated APK: james-ide-armeabi-v7a-dev-1.0.0+gh.r04.apk for variant: dev, arch: armeabi-v7a, versionCode: 1024
-
-> Configure project :logging:logsender
-w: file:///home/runner/work/JamesIDE/JamesIDE/logging/logsender/build.gradle.kts:43:29: 'getter for buildDir: File!' is deprecated. Deprecated in Java
-
-> Configure project :termux:emulator
-Checking the license for package NDK (Side by side) 27.1.12297006 in /usr/local/lib/android/sdk/licenses
-License for package NDK (Side by side) 27.1.12297006 accepted.
-Preparing "Install NDK (Side by side) 27.1.12297006 v.27.1.12297006".
-"Install NDK (Side by side) 27.1.12297006 v.27.1.12297006" ready.
-Installing NDK (Side by side) 27.1.12297006 in /usr/local/lib/android/sdk/ndk/27.1.12297006
-"Install NDK (Side by side) 27.1.12297006 v.27.1.12297006" complete.
-"Install NDK (Side by side) 27.1.12297006 v.27.1.12297006" finished.
-
-> Configure project :utilities:build-info
-w: file:///home/runner/work/JamesIDE/JamesIDE/utilities/build-info/build.gradle.kts:45:7: 'create(String!, Action<in Task!>!): Task!' is deprecated. Deprecated in Java
-gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_2-1784694634097.json
+> Task :core:common:compileDebugKotlin
+w: file:///home/runner/work/JamesIDE/JamesIDE/core/common/src/main/java/com/tom/rv2ide/tasks/TaskExecutor.kt:19:8 'class ProgressDialog : AlertDialog' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/JamesIDE/JamesIDE/core/common/src/main/java/com/tom/rv2ide/utils/AppRestartDialog.kt:67:17 'fun overridePendingTransition(p0: Int, p1: Int): Unit' is deprecated. Deprecated in Java.
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_2-1784695493496.json
 
 [Incubating] Problems report is available at: file:///home/runner/work/JamesIDE/JamesIDE/build/reports/problems/problems-report.html
 
 FAILURE: Build failed with an exception.
 
 * What went wrong:
-Could not determine the dependencies of task ':core:app:compileDebugJavaWithJavac'.
-> Could not resolve all dependencies for configuration ':core:app:debugCompileClasspath'.
-   > Could not resolve project :java:lsp-setup.
-     Required by:
-         project :core:app
-      > No matching variant of project :java:lsp-setup was found. The consumer was configured to find a library for use during compile-time, preferably optimized for Android, as well as attribute 'com.android.build.api.attributes.AgpVersionAttr' with value '8.13.0', attribute 'com.android.build.api.attributes.BuildTypeAttr' with value 'debug', attribute 'org.jetbrains.kotlin.platform.type' with value 'androidJvm' but:
-          - No variants exist.
-   > Could not resolve project :java:lsp.
-     Required by:
-         project :core:app
-      > No matching variant of project :java:lsp was found. The consumer was configured to find a library for use during compile-time, preferably optimized for Android, as well as attribute 'com.android.build.api.attributes.AgpVersionAttr' with value '8.13.0', attribute 'com.android.build.api.attributes.BuildTypeAttr' with value 'debug', attribute 'org.jetbrains.kotlin.platform.type' with value 'androidJvm' but:
-          - No variants exist.
+Execution failed for task ':external:logwire:processDebugManifest'.
+> A failure occurred while executing com.android.build.gradle.tasks.ProcessLibraryManifest$ProcessLibWorkAction
+   > com.android.manifmerger.ManifestMerger2$MergeFailureException: Error parsing /home/runner/work/JamesIDE/JamesIDE/external/logwire/src/main/AndroidManifest.xml
 
 * Try:
-> Creating consumable variants is explained in more detail at https://docs.gradle.org/8.13/userguide/declaring_dependencies.html#sec:resolvable-consumable-configs.
-> Review the variant matching algorithm at https://docs.gradle.org/8.13/userguide/variant_attributes.html#sec:abm_algorithm.
 > Run with --info or --debug option to get more log output.
 > Run with --scan to get full insights.
 > Get more help at https://help.gradle.org.
 
 * Exception is:
-org.gradle.api.internal.tasks.TaskDependencyResolveException: Could not determine the dependencies of task ':core:app:compileDebugJavaWithJavac'.
-	at org.gradle.api.internal.tasks.CachingTaskDependencyResolveContext.getDependencies(CachingTaskDependencyResolveContext.java:70)
-	at org.gradle.execution.plan.TaskDependencyResolver.resolveDependenciesFor(TaskDependencyResolver.java:49)
-	at org.gradle.execution.plan.LocalTaskNode.getDependencies(LocalTaskNode.java:151)
-	at org.gradle.execution.plan.LocalTaskNode.resolveDependencies(LocalTaskNode.java:125)
-	at org.gradle.execution.plan.DefaultExecutionPlan.discoverNodeRelationships(DefaultExecutionPlan.java:182)
-	at org.gradle.execution.plan.DefaultExecutionPlan.doAddEntryNodes(DefaultExecutionPlan.java:154)
-	at org.gradle.execution.plan.DefaultExecutionPlan.addEntryTasks(DefaultExecutionPlan.java:129)
-	at org.gradle.execution.plan.DefaultExecutionPlan.addEntryTasks(DefaultExecutionPlan.java:121)
-	at org.gradle.execution.TaskNameResolvingBuildTaskScheduler.scheduleRequestedTasks(TaskNameResolvingBuildTaskScheduler.java:61)
-	at org.gradle.execution.DefaultTasksBuildTaskScheduler.scheduleRequestedTasks(DefaultTasksBuildTaskScheduler.java:72)
-	at org.gradle.initialization.DefaultTaskExecutionPreparer.lambda$scheduleRequestedTasks$0(DefaultTaskExecutionPreparer.java:48)
-	at org.gradle.internal.Factories$1.create(Factories.java:31)
-	at org.gradle.internal.work.DefaultWorkerLeaseService.withReplacedLocks(DefaultWorkerLeaseService.java:359)
-	at org.gradle.api.internal.project.DefaultProjectStateRegistry$DefaultBuildProjectRegistry.withMutableStateOfAllProjects(DefaultProjectStateRegistry.java:239)
-	at org.gradle.api.internal.project.DefaultProjectStateRegistry$DefaultBuildProjectRegistry.withMutableStateOfAllProjects(DefaultProjectStateRegistry.java:232)
-	at org.gradle.initialization.DefaultTaskExecutionPreparer.scheduleRequestedTasks(DefaultTaskExecutionPreparer.java:47)
-	at org.gradle.initialization.VintageBuildModelController.lambda$scheduleRequestedTasks$0(VintageBuildModelController.java:76)
-	at org.gradle.internal.model.StateTransitionController.lambda$inState$1(StateTransitionController.java:99)
-	at org.gradle.internal.model.StateTransitionController.lambda$inState$2(StateTransitionController.java:114)
-	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:46)
-	at org.gradle.internal.model.StateTransitionController.inState(StateTransitionController.java:110)
-	at org.gradle.internal.model.StateTransitionController.inState(StateTransitionController.java:98)
-	at org.gradle.initialization.VintageBuildModelController.scheduleRequestedTasks(VintageBuildModelController.java:76)
-	at org.gradle.internal.build.DefaultBuildLifecycleController$DefaultWorkGraphBuilder.addRequestedTasks(DefaultBuildLifecycleController.java:404)
-	at org.gradle.internal.buildtree.DefaultBuildTreeWorkPreparer.lambda$scheduleRequestedTasks$0(DefaultBuildTreeWorkPreparer.java:41)
-	at org.gradle.internal.build.DefaultBuildLifecycleController.lambda$populateWorkGraph$7(DefaultBuildLifecycleController.java:189)
-	at org.gradle.internal.build.DefaultBuildWorkPreparer.populateWorkGraph(DefaultBuildWorkPreparer.java:42)
-	at org.gradle.internal.build.BuildOperationFiringBuildWorkPreparer$PopulateWorkGraph.populateTaskGraph(BuildOperationFiringBuildWorkPreparer.java:106)
-	at org.gradle.internal.build.BuildOperationFiringBuildWorkPreparer$PopulateWorkGraph.run(BuildOperationFiringBuildWorkPreparer.java:92)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:30)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:27)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:48)
-	at org.gradle.internal.build.BuildOperationFiringBuildWorkPreparer.populateWorkGraph(BuildOperationFiringBuildWorkPreparer.java:67)
-	at org.gradle.internal.build.DefaultBuildLifecycleController.lambda$populateWorkGraph$8(DefaultBuildLifecycleController.java:189)
-	at org.gradle.internal.model.StateTransitionController.lambda$inState$1(StateTransitionController.java:99)
-	at org.gradle.internal.model.StateTransitionController.lambda$inState$2(StateTransitionController.java:114)
-	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:46)
-	at org.gradle.internal.model.StateTransitionController.inState(StateTransitionController.java:110)
-	at org.gradle.internal.model.StateTransitionController.inState(StateTransitionController.java:98)
-	at org.gradle.internal.build.DefaultBuildLifecycleController.populateWorkGraph(DefaultBuildLifecycleController.java:189)
-	at org.gradle.internal.build.DefaultBuildWorkGraphController$DefaultBuildWorkGraph.populateWorkGraph(DefaultBuildWorkGraphController.java:169)
-	at org.gradle.composite.internal.DefaultBuildController.populateWorkGraph(DefaultBuildController.java:76)
-	at org.gradle.composite.internal.DefaultIncludedBuildTaskGraph$DefaultBuildTreeWorkGraphBuilder.withWorkGraph(DefaultIncludedBuildTaskGraph.java:153)
-	at org.gradle.internal.buildtree.DefaultBuildTreeWorkPreparer.lambda$scheduleRequestedTasks$1(DefaultBuildTreeWorkPreparer.java:41)
-	at org.gradle.composite.internal.DefaultIncludedBuildTaskGraph$DefaultBuildTreeWorkGraph$1.run(DefaultIncludedBuildTaskGraph.java:209)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:30)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:27)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:48)
-	at org.gradle.composite.internal.DefaultIncludedBuildTaskGraph$DefaultBuildTreeWorkGraph.scheduleWork(DefaultIncludedBuildTaskGraph.java:204)
-	at org.gradle.internal.buildtree.DefaultBuildTreeWorkPreparer.scheduleRequestedTasks(DefaultBuildTreeWorkPreparer.java:37)
-	at org.gradle.internal.cc.impl.VintageBuildTreeWorkController$scheduleAndRunRequestedTasks$1.apply(VintageBuildTreeWorkController.kt:36)
-	at org.gradle.internal.cc.impl.VintageBuildTreeWorkController$scheduleAndRunRequestedTasks$1.apply(VintageBuildTreeWorkController.kt:35)
-	at org.gradle.composite.internal.DefaultIncludedBuildTaskGraph.withNewWorkGraph(DefaultIncludedBuildTaskGraph.java:112)
-	at org.gradle.internal.cc.impl.VintageBuildTreeWorkController.scheduleAndRunRequestedTasks(VintageBuildTreeWorkController.kt:35)
-	at org.gradle.internal.buildtree.DefaultBuildTreeLifecycleController.lambda$scheduleAndRunTasks$1(DefaultBuildTreeLifecycleController.java:77)
-	at org.gradle.internal.buildtree.DefaultBuildTreeLifecycleController.lambda$runBuild$4(DefaultBuildTreeLifecycleController.java:120)
-	at org.gradle.internal.model.StateTransitionController.lambda$transition$6(StateTransitionController.java:169)
-	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
-	at org.gradle.internal.model.StateTransitionController.lambda$transition$7(StateTransitionController.java:169)
-	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:46)
-	at org.gradle.internal.model.StateTransitionController.transition(StateTransitionController.java:169)
-	at org.gradle.internal.buildtree.DefaultBuildTreeLifecycleController.runBuild(DefaultBuildTreeLifecycleController.java:117)
-	at org.gradle.internal.buildtree.DefaultBuildTreeLifecycleController.scheduleAndRunTasks(DefaultBuildTreeLifecycleController.java:77)
-	at org.gradle.internal.buildtree.DefaultBuildTreeLifecycleController.scheduleAndRunTasks(DefaultBuildTreeLifecycleController.java:72)
-	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:31)
-	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
-	at org.gradle.internal.buildtree.ProblemReportingBuildActionRunner.run(ProblemReportingBuildActionRunner.java:49)
-	at org.gradle.launcher.exec.BuildOutcomeReportingBuildActionRunner.run(BuildOutcomeReportingBuildActionRunner.java:71)
-	at org.gradle.tooling.internal.provider.FileSystemWatchingBuildActionRunner.run(FileSystemWatchingBuildActionRunner.java:135)
-	at org.gradle.launcher.exec.BuildCompletionNotifyingBuildActionRunner.run(BuildCompletionNotifyingBuildActionRunner.java:41)
-	at org.gradle.launcher.exec.RootBuildLifecycleBuildActionExecutor.lambda$execute$0(RootBuildLifecycleBuildActionExecutor.java:54)
-	at org.gradle.composite.internal.DefaultRootBuildState.run(DefaultRootBuildState.java:130)
-	at org.gradle.launcher.exec.RootBuildLifecycleBuildActionExecutor.execute(RootBuildLifecycleBuildActionExecutor.java:54)
-	at org.gradle.internal.buildtree.InitDeprecationLoggingActionExecutor.execute(InitDeprecationLoggingActionExecutor.java:62)
-	at org.gradle.internal.buildtree.InitProblems.execute(InitProblems.java:36)
-	at org.gradle.internal.buildtree.DefaultBuildTreeContext.execute(DefaultBuildTreeContext.java:40)
-	at org.gradle.launcher.exec.BuildTreeLifecycleBuildActionExecutor.lambda$execute$0(BuildTreeLifecycleBuildActionExecutor.java:71)
-	at org.gradle.internal.buildtree.BuildTreeState.run(BuildTreeState.java:60)
-	at org.gradle.launcher.exec.BuildTreeLifecycleBuildActionExecutor.execute(BuildTreeLifecycleBuildActionExecutor.java:71)
-	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionExecutor$2.call(RunAsBuildOperationBuildActionExecutor.java:67)
-	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionExecutor$2.call(RunAsBuildOperationBuildActionExecutor.java:63)
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':external:logwire:processDebugManifest'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:130)
+	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:293)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:128)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
+	at org.gradle.api.internal.tasks.execution.ProblemsTaskPathTrackingTaskExecuter.execute(ProblemsTaskPathTrackingTaskExecuter.java:40)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
@@ -248,138 +229,59 @@ org.gradle.api.internal.tasks.TaskDependencyResolveException: Could not determin
 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
-	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionExecutor.execute(RunAsBuildOperationBuildActionExecutor.java:63)
-	at org.gradle.launcher.exec.RunAsWorkerThreadBuildActionExecutor.lambda$execute$0(RunAsWorkerThreadBuildActionExecutor.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:459)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
+	at org.gradle.execution.plan.DefaultPlanExecutor.process(DefaultPlanExecutor.java:111)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.executeWithServices(DefaultTaskExecutionGraph.java:138)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.execute(DefaultTaskExecutionGraph.java:123)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:35)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:51)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:54)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:43)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor.execute(BuildOperationFiringBuildWorkerExecutor.java:40)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.lambda$executeTasks$10(DefaultBuildLifecycleController.java:313)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
+	at org.gradle.internal.model.StateTransitionController.lambda$tryTransition$8(StateTransitionController.java:177)
+	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:46)
+	at org.gradle.internal.model.StateTransitionController.tryTransition(StateTransitionController.java:177)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.executeTasks(DefaultBuildLifecycleController.java:304)
+	at org.gradle.internal.build.DefaultBuildWorkGraphController$DefaultBuildWorkGraph.runWork(DefaultBuildWorkGraphController.java:220)
 	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:263)
 	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:127)
-	at org.gradle.launcher.exec.RunAsWorkerThreadBuildActionExecutor.execute(RunAsWorkerThreadBuildActionExecutor.java:36)
-	at org.gradle.tooling.internal.provider.continuous.ContinuousBuildActionExecutor.execute(ContinuousBuildActionExecutor.java:110)
-	at org.gradle.tooling.internal.provider.SubscribableBuildActionExecutor.execute(SubscribableBuildActionExecutor.java:64)
-	at org.gradle.internal.session.DefaultBuildSessionContext.execute(DefaultBuildSessionContext.java:46)
-	at org.gradle.internal.buildprocess.execution.BuildSessionLifecycleBuildActionExecutor$ActionImpl.apply(BuildSessionLifecycleBuildActionExecutor.java:92)
-	at org.gradle.internal.buildprocess.execution.BuildSessionLifecycleBuildActionExecutor$ActionImpl.apply(BuildSessionLifecycleBuildActionExecutor.java:80)
-	at org.gradle.internal.session.BuildSessionState.run(BuildSessionState.java:73)
-	at org.gradle.internal.buildprocess.execution.BuildSessionLifecycleBuildActionExecutor.execute(BuildSessionLifecycleBuildActionExecutor.java:62)
-	at org.gradle.internal.buildprocess.execution.BuildSessionLifecycleBuildActionExecutor.execute(BuildSessionLifecycleBuildActionExecutor.java:41)
-	at org.gradle.internal.buildprocess.execution.StartParamsValidatingActionExecutor.execute(StartParamsValidatingActionExecutor.java:64)
-	at org.gradle.internal.buildprocess.execution.StartParamsValidatingActionExecutor.execute(StartParamsValidatingActionExecutor.java:32)
-	at org.gradle.internal.buildprocess.execution.SessionFailureReportingActionExecutor.execute(SessionFailureReportingActionExecutor.java:51)
-	at org.gradle.internal.buildprocess.execution.SessionFailureReportingActionExecutor.execute(SessionFailureReportingActionExecutor.java:39)
-	at org.gradle.internal.buildprocess.execution.SetupLoggingActionExecutor.execute(SetupLoggingActionExecutor.java:47)
-	at org.gradle.internal.buildprocess.execution.SetupLoggingActionExecutor.execute(SetupLoggingActionExecutor.java:31)
-	at org.gradle.launcher.daemon.server.exec.ExecuteBuild.doBuild(ExecuteBuild.java:70)
-	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:37)
-	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
-	at org.gradle.launcher.daemon.server.exec.WatchForDisconnection.execute(WatchForDisconnection.java:39)
-	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
-	at org.gradle.launcher.daemon.server.exec.ResetDeprecationLogger.execute(ResetDeprecationLogger.java:29)
-	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
-	at org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon.execute(RequestStopIfSingleUsedDaemon.java:35)
-	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
-	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.lambda$execute$0(ForwardClientInput.java:40)
-	at org.gradle.internal.daemon.clientinput.ClientInputForwarder.forwardInput(ClientInputForwarder.java:80)
-	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.execute(ForwardClientInput.java:37)
-	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
-	at org.gradle.launcher.daemon.server.exec.LogAndCheckHealth.execute(LogAndCheckHealth.java:53)
-	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
-	at org.gradle.launcher.daemon.server.exec.LogToClient.doBuild(LogToClient.java:63)
-	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:37)
-	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
-	at org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment.doBuild(EstablishBuildEnvironment.java:84)
-	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:37)
-	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
-	at org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy$1.run(StartBuildOrRespondWithBusy.java:52)
-	at org.gradle.launcher.daemon.server.DaemonStateCoordinator.lambda$runCommand$0(DaemonStateCoordinator.java:321)
+	at org.gradle.composite.internal.DefaultBuildController.doRun(DefaultBuildController.java:181)
+	at org.gradle.composite.internal.DefaultBuildController.access$000(DefaultBuildController.java:50)
+	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.lambda$run$0(DefaultBuildController.java:198)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
+	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.run(DefaultBuildController.java:198)
 	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
 	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
-Caused by: org.gradle.api.internal.artifacts.ivyservice.TypedResolveException: Could not resolve all dependencies for configuration ':core:app:debugCompileClasspath'.
-	at org.gradle.api.internal.artifacts.ResolveExceptionMapper.mapFailures(ResolveExceptionMapper.java:58)
-	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$DefaultResolutionHost.consolidateFailures(DefaultConfiguration.java:1928)
-	at org.gradle.api.internal.artifacts.configurations.ResolutionBackedFileCollection.visitDependencies(ResolutionBackedFileCollection.java:60)
-	at org.gradle.api.internal.tasks.CachingTaskDependencyResolveContext$TaskGraphImpl.getNodeValues(CachingTaskDependencyResolveContext.java:108)
-	at org.gradle.internal.graph.CachingDirectedGraphWalker$GraphWithEmptyEdges.getNodeValues(CachingDirectedGraphWalker.java:219)
-	at org.gradle.internal.graph.CachingDirectedGraphWalker.doSearch(CachingDirectedGraphWalker.java:127)
-	at org.gradle.internal.graph.CachingDirectedGraphWalker.findValues(CachingDirectedGraphWalker.java:79)
-	at org.gradle.api.internal.tasks.CachingTaskDependencyResolveContext.getDependencies(CachingTaskDependencyResolveContext.java:67)
-	... 139 more
-Caused by: org.gradle.internal.resolve.ModuleVersionResolveException: Could not resolve project :java:lsp-setup.
-Required by:
-    project :core:app
-Caused by: org.gradle.internal.component.resolution.failure.exception.VariantSelectionByAttributesException: No matching variant of project :java:lsp-setup was found. The consumer was configured to find a library for use during compile-time, preferably optimized for Android, as well as attribute 'com.android.build.api.attributes.AgpVersionAttr' with value '8.13.0', attribute 'com.android.build.api.attributes.BuildTypeAttr' with value 'debug', attribute 'org.jetbrains.kotlin.platform.type' with value 'androidJvm' but:
-  - No variants exist.
-	at org.gradle.internal.component.resolution.failure.describer.NoCompatibleVariantsFailureDescriber.describeFailure(NoCompatibleVariantsFailureDescriber.java:58)
-	at org.gradle.internal.component.resolution.failure.describer.NoCompatibleVariantsFailureDescriber.describeFailure(NoCompatibleVariantsFailureDescriber.java:37)
-	at org.gradle.internal.component.resolution.failure.ResolutionFailureHandler.lambda$describeFailure$3(ResolutionFailureHandler.java:275)
-	at org.gradle.internal.component.resolution.failure.ResolutionFailureHandler.describeFailure(ResolutionFailureHandler.java:275)
-	at org.gradle.internal.component.resolution.failure.ResolutionFailureHandler.noVariantsFailure(ResolutionFailureHandler.java:160)
-	at org.gradle.internal.component.model.GraphVariantSelector.selectLegacyVariant(GraphVariantSelector.java:167)
-	at org.gradle.internal.component.model.LocalComponentDependencyMetadata.selectVariants(LocalComponentDependencyMetadata.java:121)
-	at org.gradle.internal.component.model.DelegatingDependencyMetadata.selectVariants(DelegatingDependencyMetadata.java:46)
-	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.EdgeState.calculateTargetNodes(EdgeState.java:257)
-	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.EdgeState.attachToTargetNodes(EdgeState.java:148)
-	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder.attachToTargetRevisionsSerially(DependencyGraphBuilder.java:390)
-	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder.resolveEdges(DependencyGraphBuilder.java:280)
-	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder.traverseGraph(DependencyGraphBuilder.java:205)
-	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder.resolve(DependencyGraphBuilder.java:164)
-	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphResolver.resolve(DependencyGraphResolver.java:120)
-	at org.gradle.api.internal.artifacts.ivyservice.ResolutionExecutor.doResolve(ResolutionExecutor.java:482)
-	at org.gradle.api.internal.artifacts.ivyservice.ResolutionExecutor.resolveGraph(ResolutionExecutor.java:355)
-	at org.gradle.api.internal.artifacts.ivyservice.ShortCircuitingResolutionExecutor.resolveGraph(ShortCircuitingResolutionExecutor.java:92)
-	at org.gradle.api.internal.artifacts.ivyservice.DefaultConfigurationResolver.resolveGraph(DefaultConfigurationResolver.java:129)
-	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$1.call(DefaultConfiguration.java:764)
-	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$1.call(DefaultConfiguration.java:756)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
-	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.resolveGraphInBuildOperation(DefaultConfiguration.java:756)
-	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.lambda$resolveExclusivelyIfRequired$5(DefaultConfiguration.java:748)
-	at org.gradle.api.internal.project.DefaultProjectStateRegistry$CalculatedModelValueImpl.update(DefaultProjectStateRegistry.java:533)
-	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.resolveExclusivelyIfRequired(DefaultConfiguration.java:743)
-	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.resolveGraphIfRequired(DefaultConfiguration.java:736)
-	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.access$1300(DefaultConfiguration.java:150)
-	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$ResolverResultsResolutionResultProvider.getValue(DefaultConfiguration.java:709)
-	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$ResolverResultsResolutionResultProvider.getTaskDependencyValue(DefaultConfiguration.java:701)
-	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$ResolverResultsResolutionResultProvider.getTaskDependencyValue(DefaultConfiguration.java:695)
-	at org.gradle.api.internal.artifacts.configurations.ResolutionResultProvider$1.getTaskDependencyValue(ResolutionResultProvider.java:49)
-	at org.gradle.api.internal.artifacts.configurations.ResolutionResultProviderBackedSelectedArtifactSet.visitDependencies(ResolutionResultProviderBackedSelectedArtifactSet.java:44)
-	at org.gradle.api.internal.artifacts.configurations.ResolutionBackedFileCollection.visitDependencies(ResolutionBackedFileCollection.java:58)
-	at org.gradle.api.internal.tasks.CachingTaskDependencyResolveContext$TaskGraphImpl.getNodeValues(CachingTaskDependencyResolveContext.java:108)
-	at org.gradle.internal.graph.CachingDirectedGraphWalker$GraphWithEmptyEdges.getNodeValues(CachingDirectedGraphWalker.java:219)
-	at org.gradle.internal.graph.CachingDirectedGraphWalker.doSearch(CachingDirectedGraphWalker.java:127)
-	at org.gradle.internal.graph.CachingDirectedGraphWalker.findValues(CachingDirectedGraphWalker.java:79)
-	at org.gradle.api.internal.tasks.CachingTaskDependencyResolveContext.getDependencies(CachingTaskDependencyResolveContext.java:67)
-	at org.gradle.execution.plan.TaskDependencyResolver.resolveDependenciesFor(TaskDependencyResolver.java:49)
-	at org.gradle.execution.plan.LocalTaskNode.getDependencies(LocalTaskNode.java:151)
-	at org.gradle.execution.plan.LocalTaskNode.resolveDependencies(LocalTaskNode.java:125)
-	at org.gradle.execution.plan.DefaultExecutionPlan.discoverNodeRelationships(DefaultExecutionPlan.java:182)
-	at org.gradle.execution.plan.DefaultExecutionPlan.doAddEntryNodes(DefaultExecutionPlan.java:154)
-	at org.gradle.execution.plan.DefaultExecutionPlan.addEntryTasks(DefaultExecutionPlan.java:129)
-	at org.gradle.execution.plan.DefaultExecutionPlan.addEntryTasks(DefaultExecutionPlan.java:121)
-	at org.gradle.execution.TaskNameResolvingBuildTaskScheduler.scheduleRequestedTasks(TaskNameResolvingBuildTaskScheduler.java:61)
-	at org.gradle.execution.DefaultTasksBuildTaskScheduler.scheduleRequestedTasks(DefaultTasksBuildTaskScheduler.java:72)
-	at org.gradle.initialization.DefaultTaskExecutionPreparer.lambda$scheduleRequestedTasks$0(DefaultTaskExecutionPreparer.java:48)
+Caused by: org.gradle.workers.internal.DefaultWorkerExecutor$WorkExecutionException: A failure occurred while executing com.android.build.gradle.tasks.ProcessLibraryManifest$ProcessLibWorkAction
+	at org.gradle.workers.internal.DefaultWorkerExecutor$WorkItemExecution.waitForCompletion(DefaultWorkerExecutor.java:287)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.lambda$waitForItemsAndGatherFailures$2(DefaultAsyncWorkTracker.java:130)
 	at org.gradle.internal.Factories$1.create(Factories.java:31)
-	at org.gradle.internal.work.DefaultWorkerLeaseService.withReplacedLocks(DefaultWorkerLeaseService.java:359)
-	at org.gradle.api.internal.project.DefaultProjectStateRegistry$DefaultBuildProjectRegistry.withMutableStateOfAllProjects(DefaultProjectStateRegistry.java:239)
-	at org.gradle.api.internal.project.DefaultProjectStateRegistry$DefaultBuildProjectRegistry.withMutableStateOfAllProjects(DefaultProjectStateRegistry.java:232)
-	at org.gradle.initialization.DefaultTaskExecutionPreparer.scheduleRequestedTasks(DefaultTaskExecutionPreparer.java:47)
-	at org.gradle.initialization.VintageBuildModelController.lambda$scheduleRequestedTasks$0(VintageBuildModelController.java:76)
-	at org.gradle.internal.model.StateTransitionController.lambda$inState$1(StateTransitionController.java:99)
-	at org.gradle.internal.model.StateTransitionController.lambda$inState$2(StateTransitionController.java:114)
-	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:46)
-	at org.gradle.internal.model.StateTransitionController.inState(StateTransitionController.java:110)
-	at org.gradle.internal.model.StateTransitionController.inState(StateTransitionController.java:98)
-	at org.gradle.initialization.VintageBuildModelController.scheduleRequestedTasks(VintageBuildModelController.java:76)
-	at org.gradle.internal.build.DefaultBuildLifecycleController$DefaultWorkGraphBuilder.addRequestedTasks(DefaultBuildLifecycleController.java:404)
-	at org.gradle.internal.buildtree.DefaultBuildTreeWorkPreparer.lambda$scheduleRequestedTasks$0(DefaultBuildTreeWorkPreparer.java:41)
-	at org.gradle.internal.build.DefaultBuildLifecycleController.lambda$populateWorkGraph$7(DefaultBuildLifecycleController.java:189)
-	at org.gradle.internal.build.DefaultBuildWorkPreparer.populateWorkGraph(DefaultBuildWorkPreparer.java:42)
-	at org.gradle.internal.build.BuildOperationFiringBuildWorkPreparer$PopulateWorkGraph.populateTaskGraph(BuildOperationFiringBuildWorkPreparer.java:106)
-	at org.gradle.internal.build.BuildOperationFiringBuildWorkPreparer$PopulateWorkGraph.run(BuildOperationFiringBuildWorkPreparer.java:92)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLocks(DefaultWorkerLeaseService.java:335)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLocks(DefaultWorkerLeaseService.java:318)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLock(DefaultWorkerLeaseService.java:323)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForItemsAndGatherFailures(DefaultAsyncWorkTracker.java:126)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForItemsAndGatherFailures(DefaultAsyncWorkTracker.java:92)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForAll(DefaultAsyncWorkTracker.java:78)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForCompletion(DefaultAsyncWorkTracker.java:66)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:252)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:30)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:27)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
@@ -387,59 +289,14 @@ Caused by: org.gradle.internal.component.resolution.failure.exception.VariantSel
 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:48)
-	at org.gradle.internal.build.BuildOperationFiringBuildWorkPreparer.populateWorkGraph(BuildOperationFiringBuildWorkPreparer.java:67)
-	at org.gradle.internal.build.DefaultBuildLifecycleController.lambda$populateWorkGraph$8(DefaultBuildLifecycleController.java:189)
-	at org.gradle.internal.model.StateTransitionController.lambda$inState$1(StateTransitionController.java:99)
-	at org.gradle.internal.model.StateTransitionController.lambda$inState$2(StateTransitionController.java:114)
-	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:46)
-	at org.gradle.internal.model.StateTransitionController.inState(StateTransitionController.java:110)
-	at org.gradle.internal.model.StateTransitionController.inState(StateTransitionController.java:98)
-	at org.gradle.internal.build.DefaultBuildLifecycleController.populateWorkGraph(DefaultBuildLifecycleController.java:189)
-	at org.gradle.internal.build.DefaultBuildWorkGraphController$DefaultBuildWorkGraph.populateWorkGraph(DefaultBuildWorkGraphController.java:169)
-	at org.gradle.composite.internal.DefaultBuildController.populateWorkGraph(DefaultBuildController.java:76)
-	at org.gradle.composite.internal.DefaultIncludedBuildTaskGraph$DefaultBuildTreeWorkGraphBuilder.withWorkGraph(DefaultIncludedBuildTaskGraph.java:153)
-	at org.gradle.internal.buildtree.DefaultBuildTreeWorkPreparer.lambda$scheduleRequestedTasks$1(DefaultBuildTreeWorkPreparer.java:41)
-	at org.gradle.composite.internal.DefaultIncludedBuildTaskGraph$DefaultBuildTreeWorkGraph$1.run(DefaultIncludedBuildTaskGraph.java:209)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:30)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:27)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:48)
-	at org.gradle.composite.internal.DefaultIncludedBuildTaskGraph$DefaultBuildTreeWorkGraph.scheduleWork(DefaultIncludedBuildTaskGraph.java:204)
-	at org.gradle.internal.buildtree.DefaultBuildTreeWorkPreparer.scheduleRequestedTasks(DefaultBuildTreeWorkPreparer.java:37)
-	at org.gradle.internal.cc.impl.VintageBuildTreeWorkController$scheduleAndRunRequestedTasks$1.apply(VintageBuildTreeWorkController.kt:36)
-	at org.gradle.internal.cc.impl.VintageBuildTreeWorkController$scheduleAndRunRequestedTasks$1.apply(VintageBuildTreeWorkController.kt:35)
-	at org.gradle.composite.internal.DefaultIncludedBuildTaskGraph.withNewWorkGraph(DefaultIncludedBuildTaskGraph.java:112)
-	at org.gradle.internal.cc.impl.VintageBuildTreeWorkController.scheduleAndRunRequestedTasks(VintageBuildTreeWorkController.kt:35)
-	at org.gradle.internal.buildtree.DefaultBuildTreeLifecycleController.lambda$scheduleAndRunTasks$1(DefaultBuildTreeLifecycleController.java:77)
-	at org.gradle.internal.buildtree.DefaultBuildTreeLifecycleController.lambda$runBuild$4(DefaultBuildTreeLifecycleController.java:120)
-	at org.gradle.internal.model.StateTransitionController.lambda$transition$6(StateTransitionController.java:169)
-	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
-	at org.gradle.internal.model.StateTransitionController.lambda$transition$7(StateTransitionController.java:169)
-	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:46)
-	at org.gradle.internal.model.StateTransitionController.transition(StateTransitionController.java:169)
-	at org.gradle.internal.buildtree.DefaultBuildTreeLifecycleController.runBuild(DefaultBuildTreeLifecycleController.java:117)
-	at org.gradle.internal.buildtree.DefaultBuildTreeLifecycleController.scheduleAndRunTasks(DefaultBuildTreeLifecycleController.java:77)
-	at org.gradle.internal.buildtree.DefaultBuildTreeLifecycleController.scheduleAndRunTasks(DefaultBuildTreeLifecycleController.java:72)
-	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:31)
-	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
-	at org.gradle.internal.buildtree.ProblemReportingBuildActionRunner.run(ProblemReportingBuildActionRunner.java:49)
-	at org.gradle.launcher.exec.BuildOutcomeReportingBuildActionRunner.run(BuildOutcomeReportingBuildActionRunner.java:71)
-	at org.gradle.tooling.internal.provider.FileSystemWatchingBuildActionRunner.run(FileSystemWatchingBuildActionRunner.java:135)
-	at org.gradle.launcher.exec.BuildCompletionNotifyingBuildActionRunner.run(BuildCompletionNotifyingBuildActionRunner.java:41)
-	at org.gradle.launcher.exec.RootBuildLifecycleBuildActionExecutor.lambda$execute$0(RootBuildLifecycleBuildActionExecutor.java:54)
-	at org.gradle.composite.internal.DefaultRootBuildState.run(DefaultRootBuildState.java:130)
-	at org.gradle.launcher.exec.RootBuildLifecycleBuildActionExecutor.execute(RootBuildLifecycleBuildActionExecutor.java:54)
-	at org.gradle.internal.buildtree.InitDeprecationLoggingActionExecutor.execute(InitDeprecationLoggingActionExecutor.java:62)
-	at org.gradle.internal.buildtree.InitProblems.execute(InitProblems.java:36)
-	at org.gradle.internal.buildtree.DefaultBuildTreeContext.execute(DefaultBuildTreeContext.java:40)
-	at org.gradle.launcher.exec.BuildTreeLifecycleBuildActionExecutor.lambda$execute$0(BuildTreeLifecycleBuildActionExecutor.java:71)
-	at org.gradle.internal.buildtree.BuildTreeState.run(BuildTreeState.java:60)
-	at org.gradle.launcher.exec.BuildTreeLifecycleBuildActionExecutor.execute(BuildTreeLifecycleBuildActionExecutor.java:71)
-	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionExecutor$2.call(RunAsBuildOperationBuildActionExecutor.java:67)
-	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionExecutor$2.call(RunAsBuildOperationBuildActionExecutor.java:63)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeAction(TaskExecution.java:229)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeActions(TaskExecution.java:212)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeWithPreviousOutputFiles(TaskExecution.java:195)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.execute(TaskExecution.java:162)
+	at org.gradle.internal.execution.steps.ExecuteStep.executeInternal(ExecuteStep.java:105)
+	at org.gradle.internal.execution.steps.ExecuteStep.access$000(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:59)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:56)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
@@ -447,50 +304,193 @@ Caused by: org.gradle.internal.component.resolution.failure.exception.VariantSel
 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
-	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionExecutor.execute(RunAsBuildOperationBuildActionExecutor.java:63)
-	at org.gradle.launcher.exec.RunAsWorkerThreadBuildActionExecutor.lambda$execute$0(RunAsWorkerThreadBuildActionExecutor.java:36)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:56)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.CancelExecutionStep.execute(CancelExecutionStep.java:42)
+	at org.gradle.internal.execution.steps.TimeoutStep.executeWithoutTimeout(TimeoutStep.java:75)
+	at org.gradle.internal.execution.steps.TimeoutStep.execute(TimeoutStep.java:55)
+	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:50)
+	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:28)
+	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:67)
+	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:37)
+	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:61)
+	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:26)
+	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:69)
+	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:46)
+	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:40)
+	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:29)
+	at org.gradle.internal.execution.steps.BuildCacheStep.executeWithoutCache(BuildCacheStep.java:189)
+	at org.gradle.internal.execution.steps.BuildCacheStep.executeAndStoreInCache(BuildCacheStep.java:145)
+	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$executeWithCache$4(BuildCacheStep.java:101)
+	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$executeWithCache$5(BuildCacheStep.java:101)
+	at org.gradle.internal.Try$Success.map(Try.java:175)
+	at org.gradle.internal.execution.steps.BuildCacheStep.executeWithCache(BuildCacheStep.java:85)
+	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$execute$0(BuildCacheStep.java:74)
+	at org.gradle.internal.Either$Left.fold(Either.java:115)
+	at org.gradle.internal.execution.caching.CachingState.fold(CachingState.java:62)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:73)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:48)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:46)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:35)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.executeBecause(SkipUpToDateStep.java:75)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.lambda$execute$2(SkipUpToDateStep.java:53)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:53)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:35)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:37)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:27)
+	at org.gradle.internal.execution.steps.ResolveIncrementalCachingStateStep.executeDelegate(ResolveIncrementalCachingStateStep.java:49)
+	at org.gradle.internal.execution.steps.ResolveIncrementalCachingStateStep.executeDelegate(ResolveIncrementalCachingStateStep.java:27)
+	at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:71)
+	at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:39)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:65)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:36)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:107)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:56)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:64)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:43)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.executeWithNonEmptySources(AbstractSkipEmptyWorkStep.java:125)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:56)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:36)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:36)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:23)
+	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:75)
+	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:41)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.lambda$execute$0(AssignMutableWorkspaceStep.java:35)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$4.withWorkspace(TaskExecution.java:289)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:31)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:22)
+	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:40)
+	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:23)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.lambda$execute$2(ExecuteWorkBuildOperationFiringStep.java:67)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:67)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:39)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:46)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:34)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:48)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:35)
+	at org.gradle.internal.execution.impl.DefaultExecutionEngine$1.execute(DefaultExecutionEngine.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:127)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
+	at org.gradle.api.internal.tasks.execution.ProblemsTaskPathTrackingTaskExecuter.execute(ProblemsTaskPathTrackingTaskExecuter.java:40)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:459)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
+	at org.gradle.execution.plan.DefaultPlanExecutor.process(DefaultPlanExecutor.java:111)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.executeWithServices(DefaultTaskExecutionGraph.java:138)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.execute(DefaultTaskExecutionGraph.java:123)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:35)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:51)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:54)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:43)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor.execute(BuildOperationFiringBuildWorkerExecutor.java:40)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.lambda$executeTasks$10(DefaultBuildLifecycleController.java:313)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
+	at org.gradle.internal.model.StateTransitionController.lambda$tryTransition$8(StateTransitionController.java:177)
+	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:46)
+	at org.gradle.internal.model.StateTransitionController.tryTransition(StateTransitionController.java:177)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.executeTasks(DefaultBuildLifecycleController.java:304)
+	at org.gradle.internal.build.DefaultBuildWorkGraphController$DefaultBuildWorkGraph.runWork(DefaultBuildWorkGraphController.java:220)
 	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:263)
 	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:127)
-	at org.gradle.launcher.exec.RunAsWorkerThreadBuildActionExecutor.execute(RunAsWorkerThreadBuildActionExecutor.java:36)
-	at org.gradle.tooling.internal.provider.continuous.ContinuousBuildActionExecutor.execute(ContinuousBuildActionExecutor.java:110)
-	at org.gradle.tooling.internal.provider.SubscribableBuildActionExecutor.execute(SubscribableBuildActionExecutor.java:64)
-	at org.gradle.internal.session.DefaultBuildSessionContext.execute(DefaultBuildSessionContext.java:46)
-	at org.gradle.internal.buildprocess.execution.BuildSessionLifecycleBuildActionExecutor$ActionImpl.apply(BuildSessionLifecycleBuildActionExecutor.java:92)
-	at org.gradle.internal.buildprocess.execution.BuildSessionLifecycleBuildActionExecutor$ActionImpl.apply(BuildSessionLifecycleBuildActionExecutor.java:80)
-	at org.gradle.internal.session.BuildSessionState.run(BuildSessionState.java:73)
-	at org.gradle.internal.buildprocess.execution.BuildSessionLifecycleBuildActionExecutor.execute(BuildSessionLifecycleBuildActionExecutor.java:62)
-	at org.gradle.internal.buildprocess.execution.BuildSessionLifecycleBuildActionExecutor.execute(BuildSessionLifecycleBuildActionExecutor.java:41)
-	at org.gradle.internal.buildprocess.execution.StartParamsValidatingActionExecutor.execute(StartParamsValidatingActionExecutor.java:64)
-	at org.gradle.internal.buildprocess.execution.StartParamsValidatingActionExecutor.execute(StartParamsValidatingActionExecutor.java:32)
-	at org.gradle.internal.buildprocess.execution.SessionFailureReportingActionExecutor.execute(SessionFailureReportingActionExecutor.java:51)
-	at org.gradle.internal.buildprocess.execution.SessionFailureReportingActionExecutor.execute(SessionFailureReportingActionExecutor.java:39)
-	at org.gradle.internal.buildprocess.execution.SetupLoggingActionExecutor.execute(SetupLoggingActionExecutor.java:47)
-	at org.gradle.internal.buildprocess.execution.SetupLoggingActionExecutor.execute(SetupLoggingActionExecutor.java:31)
-	at org.gradle.launcher.daemon.server.exec.ExecuteBuild.doBuild(ExecuteBuild.java:70)
-	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:37)
-	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
-	at org.gradle.launcher.daemon.server.exec.WatchForDisconnection.execute(WatchForDisconnection.java:39)
-	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
-	at org.gradle.launcher.daemon.server.exec.ResetDeprecationLogger.execute(ResetDeprecationLogger.java:29)
-	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
-	at org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon.execute(RequestStopIfSingleUsedDaemon.java:35)
-	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
-	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.lambda$execute$0(ForwardClientInput.java:40)
-	at org.gradle.internal.daemon.clientinput.ClientInputForwarder.forwardInput(ClientInputForwarder.java:80)
-	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.execute(ForwardClientInput.java:37)
-	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
-	at org.gradle.launcher.daemon.server.exec.LogAndCheckHealth.execute(LogAndCheckHealth.java:53)
-	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
-	at org.gradle.launcher.daemon.server.exec.LogToClient.doBuild(LogToClient.java:63)
-	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:37)
-	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
-	at org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment.doBuild(EstablishBuildEnvironment.java:84)
-	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:37)
-	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
-	at org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy$1.run(StartBuildOrRespondWithBusy.java:52)
-	at org.gradle.launcher.daemon.server.DaemonStateCoordinator.lambda$runCommand$0(DaemonStateCoordinator.java:321)
+	at org.gradle.composite.internal.DefaultBuildController.doRun(DefaultBuildController.java:181)
+	at org.gradle.composite.internal.DefaultBuildController.access$000(DefaultBuildController.java:50)
+	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.lambda$run$0(DefaultBuildController.java:198)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
+	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.run(DefaultBuildController.java:198)
 	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
 	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+Caused by: java.lang.RuntimeException: com.android.manifmerger.ManifestMerger2$MergeFailureException: Error parsing /home/runner/work/JamesIDE/JamesIDE/external/logwire/src/main/AndroidManifest.xml
+	at com.android.build.gradle.internal.tasks.manifest.ManifestHelperKt.mergeManifests(ManifestHelper.kt:163)
+	at com.android.build.gradle.internal.tasks.manifest.ManifestHelperKt.mergeManifests$default(ManifestHelper.kt:46)
+	at com.android.build.gradle.tasks.ProcessLibraryManifest$ProcessLibWorkAction.run(ProcessLibraryManifest.kt:154)
+	at com.android.build.gradle.internal.profile.ProfileAwareWorkAction.execute(ProfileAwareWorkAction.kt:74)
+	at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
+	at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
+	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
+	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+	at org.gradle.workers.internal.AbstractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.execute(NoIsolationWorkerFactory.java:59)
+	at org.gradle.workers.internal.DefaultWorkerExecutor.lambda$submitWork$0(DefaultWorkerExecutor.java:174)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:194)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.access$700(DefaultConditionalExecutionQueue.java:127)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:169)
+	at org.gradle.internal.Factories$1.create(Factories.java:31)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:263)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:127)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:132)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:164)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:133)
+	... 2 more
+Caused by: com.android.manifmerger.ManifestMerger2$MergeFailureException: Error parsing /home/runner/work/JamesIDE/JamesIDE/external/logwire/src/main/AndroidManifest.xml
+	at com.android.manifmerger.ManifestMerger2.load(ManifestMerger2.java:1137)
+	at com.android.manifmerger.ManifestMerger2.merge(ManifestMerger2.java:188)
+	at com.android.manifmerger.ManifestMerger2$Invoker.merge(ManifestMerger2.java:2216)
+	at com.android.build.gradle.internal.tasks.manifest.ManifestHelperKt.mergeManifests(ManifestHelper.kt:131)
+	... 31 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:1013)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:114)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:326)
+	at com.android.utils.PositionXmlParser.saxParseInternal(PositionXmlParser.java:433)
+	at com.android.utils.PositionXmlParser.parseInternal(PositionXmlParser.java:379)
+	at com.android.utils.PositionXmlParser.internalParse(PositionXmlParser.java:293)
+	at com.android.utils.PositionXmlParser.parse(PositionXmlParser.java:232)
+	at com.android.utils.PositionXmlParser.parse(PositionXmlParser.java:270)
+	at com.android.manifmerger.XmlLoader.load(XmlLoader.java:65)
+	at com.android.manifmerger.ManifestMerger2.load(ManifestMerger2.java:1126)
+	... 34 more
 
 
 Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
@@ -499,6 +499,6 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD FAILED in 2m 44s
-22 actionable tasks: 22 executed
+BUILD FAILED in 2m 31s
+493 actionable tasks: 342 executed, 151 from cache
 ~~~
